@@ -9,5 +9,6 @@ int main(void)
     print_sign();
     _abs();
     print_last_digit();
+    jack_bauer();
     return 0;
 }
