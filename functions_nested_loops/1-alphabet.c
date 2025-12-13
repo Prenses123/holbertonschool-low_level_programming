@@ -8,16 +8,16 @@ void print_alphabet(void);
 
 int main(void)
 {
-	print_alphabet(void);
+	print_alphabet();
     	return (0);
 }
 void print_alphabet(void)
 {
 	char c;
 
-	a = 'a';
+	c = 'a';
 
-	while (a <= 'z')
+	while (c <= 'z')
 	{
 		_putchar(c);
 		c++;
