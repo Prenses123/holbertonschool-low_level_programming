@@ -7,10 +7,11 @@ void print_alphabet_x10(void);         /* print_alphabet_x10 funksiyasi */
 int _islower(int c);          /*int _islower(int c) funksiyasi*/
 int _isalpha(int c);          /* int _isalpha(int c) funksiyasi*/
 int print_sign(int n);        /* int print_sign(int n) funksiyasi*/
-int _abs(int);                /* int _abs(int) funksiyasi*/
+int _abs(int n);                /* int _abs(int n) funksiyasi*/
 
 
 #endif /* MAIN_H */
+
 
 
 
