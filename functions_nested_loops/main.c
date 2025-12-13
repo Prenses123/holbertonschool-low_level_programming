@@ -12,5 +12,6 @@ int main(void)
     jack_bauer();
     times_table();
     add();
+    print_to_98();
     return 0;
 }
