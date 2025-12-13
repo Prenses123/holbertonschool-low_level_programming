@@ -13,6 +13,7 @@ int main(void)
 }
 
 void _putchar(c);
+print_alphabet()
 {
     char c;
 
