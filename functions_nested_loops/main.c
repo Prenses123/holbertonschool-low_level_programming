@@ -10,5 +10,6 @@ int main(void)
     _abs();
     print_last_digit();
     jack_bauer();
+    times_table();
     return 0;
 }
