@@ -10,13 +10,13 @@ void times_table(void)
 	int i, j, digit;
 	for (i = 0; i < 10; i++);
 	{
-		for (j = 0; j < 10;j++);
+		for (j = 0; j < 10; j++);
 		{
 			digit = i * j;
-			_putchar(digit + '0')
+			_putchar(digit + '0');
 			_putchar(',');
 		}
-		putchar('\n')
+		putchar('\n');
 	}
 	return (0);
 }	
