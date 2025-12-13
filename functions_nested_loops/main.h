@@ -10,7 +10,9 @@ int print_sign(int n);        /* int print_sign(int n) funksiyasi*/
 int _abs(int n);                /* int _abs(int n) funksiyasi*/
 int print_last_digit(int);      /* int print_last_digit(int) funksiyasi*/
 void jack_bauer(void);          /* void jack_bauer(void) funksiyasi*/
+void times_table(void);         /*void times_table(void) funksiyasi*/
 #endif /* MAIN_H */
+
 
 
 
