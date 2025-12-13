@@ -3,6 +3,7 @@
 /**
  * main - Entry point
  * Return: 0 if successful
+ * @c: The character to print
  */
 int _putchar(char c);
 
