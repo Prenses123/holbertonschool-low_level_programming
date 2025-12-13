@@ -12,7 +12,9 @@ int print_last_digit(int);      /* int print_last_digit(int) funksiyasi*/
 void jack_bauer(void);          /* void jack_bauer(void) funksiyasi*/
 void times_table(void);         /*void times_table(void) funksiyasi*/
 int add(int, int);              /*int add(int, int); funksiyasi*/
+void print_to_98(int n);        /*void print_to_98(int n) funksiyasi*/
 #endif /* MAIN_H */
+
 
 
 
