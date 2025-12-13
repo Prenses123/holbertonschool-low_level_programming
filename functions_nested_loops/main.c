@@ -11,5 +11,6 @@ int main(void)
     print_last_digit();
     jack_bauer();
     times_table();
+    add();
     return 0;
 }
