@@ -12,7 +12,7 @@ int main(void)
     	return (0);
 }
 
-void print_alphabet(void)
+char _putchar(c);
 {
     char c;
 
@@ -20,4 +20,3 @@ void print_alphabet(void)
         _putchar(c);
     _putchar('\n');
 }
-
