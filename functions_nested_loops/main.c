@@ -7,6 +7,7 @@ int main(void)
     _islower();
     _isalpha();
     print_sign();
+    _abs();
 
     return 0;
 }
