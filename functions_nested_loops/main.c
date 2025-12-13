@@ -8,6 +8,6 @@ int main(void)
     _isalpha();
     print_sign();
     _abs();
-
+    print_last_digit();
     return 0;
 }
