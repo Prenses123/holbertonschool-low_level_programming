@@ -4,6 +4,8 @@
  * main - Entry point
  * Return: 0 if successful
  */
+int _putchar(char c);
+
 int main(void)
 {
 	_putchar('_');
