@@ -16,7 +16,7 @@ void print_line(int n)
 			_putchar('\n');
 			return;
 		}
-		_putch`ar('_');
+		_putchar('_');
 	}
 	_putchar('\n');
 }
