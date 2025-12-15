@@ -1,4 +1,7 @@
-#include "main.h"
+#include <unistd.h>
+
+/* prototype for _putchar */
+int _putchar(char c);
 
 /**
  * _puts_recursion - prints a string, followed by a new line
