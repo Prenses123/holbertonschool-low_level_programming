@@ -1,23 +1,38 @@
 #include "main.h"
+#include <limits.h>
 
 /**
- * _strcpy - copies the string pointed to by src to dest
- * @dest: destination buffer
- * @src: source string
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
  *
- * Return: pointer to dest
+ * Return: the integer value of the string
  */
-char *_strcpy(char *dest, char *src)
+int _atoi(char *s)
 {
-	char *ptr = dest;
+	int sign = 1;
+	int result = 0;
+	int started = 0;
+	int digit;
 
-	while (*src != '\0')
+	while (*s != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+		{
+			started = 1;
+			digit = *s - '0';
+
+			/* overflow yoxlaması */
+			if (result > (INT_MAX - digit) / 10)
+				return (sign == 1 ? INT_MAX : INT_MIN);
+
+			result = result * 10 + digit;
+		}
+		else if (started)
+			break;
+		s++;
 	}
 
-	*dest = '\0';
-	return (ptr);
+	return (sign * result);
 }
