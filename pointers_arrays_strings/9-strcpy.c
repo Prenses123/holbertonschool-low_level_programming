@@ -33,7 +33,6 @@ int _atoi(char *s)
 
 	result = sign * result;
 
-	/* int hüdudlarını keçməməsi üçün yoxlama */
 	if (result > INT_MAX)
 		return (INT_MAX);
 	if (result < INT_MIN)
