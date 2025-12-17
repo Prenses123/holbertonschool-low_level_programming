@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int sign = 1;
-	int result = 0;
+	long int result = 0;
 	int started = 0;
 	int digit;
 
@@ -23,10 +23,6 @@ int _atoi(char *s)
 			started = 1;
 			digit = *s - '0';
 
-			/* overflow yoxlaması */
-			if (result > (INT_MAX - digit) / 10)
-				return (sign == 1 ? INT_MAX : INT_MIN);
-
 			result = result * 10 + digit;
 		}
 		else if (started)
@@ -35,9 +31,13 @@ int _atoi(char *s)
 		s++;
 	}
 
-	/* INT_MIN üçün xüsusi halda overflow-un qarşısı alınır */
-	if (result == INT_MIN && sign == -1)
+	result = sign * result;
+
+	/* int hüdudlarını keçməməsi üçün yoxlama */
+	if (result > INT_MAX)
+		return (INT_MAX);
+	if (result < INT_MIN)
 		return (INT_MIN);
 
-	return (sign * result);
+	return ((int)result);
 }
