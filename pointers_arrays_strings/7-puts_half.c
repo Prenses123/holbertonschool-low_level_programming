@@ -7,20 +7,27 @@
 void puts_half(char *str)
 {
 	int i = 0;
-	int n = 0;
+	int len;
+	int start;
+
+	/* string-in uzunluğunu tap */
 	while (str[i] != '\0')
 		i++;
-	if (i % 2 == 0)
-	{
-		for (n = i / 2;n < i; n++)
-		{
-			_putchar(str[n]);
-		}
-	}
+
+	len = i;
+
+	/* başlanğıc indeksi hesabla */
+	if (len % 2 == 0)
+		start = len / 2;
 	else
+		start = (len + 1) / 2;
+
+	/* ikinci yarını çap et */
+	while (str[start] != '\0')
 	{
-		for (n = (i + 1) / 2; n < i; n++)
-			_putchar(str[n]);
-		_putchar('\n');
+		_putchar(str[start]);
+		start++;
 	}
+
+	_putchar('\n');
 }
