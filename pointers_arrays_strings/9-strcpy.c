@@ -8,9 +8,8 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *ptr = dest;  // dest-in başlanğıcını yadda saxla
+	char *ptr = dest;
 
-	/* hər simvolu kopyala */
 	while (*src != '\0')
 	{
 		*dest = *src;
@@ -18,6 +17,5 @@ char *_strcpy(char *dest, char *src)
 		src++;
 	}
 
-	*dest = '\0';  // terminasiya null byte əlavə et
-	return ptr;    // başlanğıc pointer-i qaytar
-}
+	*dest = '\0';
+	return ptr;
