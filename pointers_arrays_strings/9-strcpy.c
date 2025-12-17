@@ -31,8 +31,13 @@ int _atoi(char *s)
 		}
 		else if (started)
 			break;
+
 		s++;
 	}
+
+	/* INT_MIN üçün xüsusi halda overflow-un qarşısı alınır */
+	if (result == INT_MIN && sign == -1)
+		return (INT_MIN);
 
 	return (sign * result);
 }
