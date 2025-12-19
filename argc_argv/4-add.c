@@ -10,6 +10,7 @@
  */
 int is_number(char *s)
 {
+
   int i = 0;
 
   if (s[0] == '\0')
@@ -38,6 +39,7 @@ int is_number(char *s)
  */
 int main(int argc, char *argv[])
 {
+
   int i, sum = 0;
 
   if (argc == 1)
