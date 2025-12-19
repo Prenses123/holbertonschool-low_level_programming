@@ -21,6 +21,7 @@ int is_number(char *s)
       return (0);
     i++;
   }
+
   return (1);
 }
 
