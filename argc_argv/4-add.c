@@ -10,18 +10,18 @@
  */
 int is_number(char *s)
 {
-    int i = 0;
+  int i = 0;
 
-    if (s[0] == '\0') /* boş string yoxla */
-        return 0;
+  if (s[0] == '\0')
+    return (0);
 
-    while (s[i])
-    {
-        if (!isdigit(s[i]))
-            return 0;
-        i++;
-    }
-    return 1;
+  while (s[i])
+  {
+    if (!isdigit(s[i]))
+      return (0);
+    i++;
+  }
+  return (1);
 }
 
 /**
@@ -29,28 +29,4 @@ int is_number(char *s)
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: 0 on success, 1 on error
- */
-int main(int argc, char *argv[])
-{
-    int i, sum = 0;
-
-    if (argc == 1)  /* heç bir arqument yoxdursa */
-    {
-        printf("0\n");
-        return 0;
-    }
-
-    for (i = 1; i < argc; i++)
-    {
-        if (!is_number(argv[i]))  /* simvol yoxlaması */
-        {
-            printf("Error\n");
-            return 1;
-        }
-        sum += atoi(argv[i]);
-    }
-
-    printf("%d\n", sum);
-    return 0;
-}
+ * Return: 0 on success, 1 on er*
