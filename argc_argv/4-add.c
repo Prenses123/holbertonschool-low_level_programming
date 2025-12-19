@@ -10,7 +10,7 @@
  */
 int is_number(char *s)
 {
-  int i = 0;
+  int  = 0;
 
   if (s[0] == '\0')
   {
