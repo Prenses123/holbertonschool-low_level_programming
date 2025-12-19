@@ -13,12 +13,16 @@ int is_number(char *s)
   int i = 0;
 
   if (s[0] == '\0')
+  {
     return (0);
+  }
 
   while (s[i])
   {
     if (!isdigit(s[i]))
+    {
       return (0);
+    }
     i++;
   }
 
