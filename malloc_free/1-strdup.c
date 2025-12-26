@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _strdup - creates a duplicate of the given string in heap memory
@@ -10,21 +10,21 @@
  */
 char *_strdup(char *str)
 {
-    char *copy;
-    int i, len;
+	char *copy;
+	int i, len;
 
-    if (str == NULL)
-        return (NULL);
+	if (str == NULL)
+		return (NULL);
 
-    for (len = 0; str[len] != '\0'; len++)
-        ;
+	for (len = 0; str[len] != '\0'; len++)
+		;
 
-    copy = malloc(len + 1);
-    if (copy == NULL)
-        return (NULL);
+	copy = malloc(len + 1);
+	if (copy == NULL)
+		return (NULL);
 
-    for (i = 0; i <= len; i++)
-        copy[i] = str[i];
+	for (i = 0; i <= len; i++)
+		copy[i] = str[i];
 
-    return (copy);
+	return (copy);
 }
