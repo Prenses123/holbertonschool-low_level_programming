@@ -2,11 +2,12 @@
 #include <stdlib.h>
 
 /**
- * _strdup - creates a duplicate of the given string in heap memory
- * @str: the string to duplicate
+ * str_concat - concatenates two strings into a newly allocated space
+ * @s1: first string
+ * @s2: second string
  *
- * Return: pointer to the newly allocated duplicated string,
- *         or NULL if str is NULL or malloc fails
+ * Return: pointer to the newly allocated concatenated string,
+ *         or NULL if malloc fails
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -26,10 +27,12 @@ char *str_concat(char *s1, char *s2)
 	new = malloc(len1 + len2 + 1);
 	if (new == NULL)
 		return (NULL);
+
 	for (i = 0; i < len1; i++)
 		new[i] = s1[i];
 	for (j = 0; j < len2; j++)
 		new[i + j] = s2[j];
 	new[i + j] = '\0';
+
 	return (new);
 }
