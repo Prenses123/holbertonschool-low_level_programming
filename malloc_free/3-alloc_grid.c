@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
+
 
 /*
  * alloc_grid - creates a 2D array of integers
