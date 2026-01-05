@@ -4,7 +4,7 @@
 
 /**
  * free_dog = function
- * @d = pointer
+ * @d: pointer to free
  */
 void free_dog(dog_t *d)
 {
