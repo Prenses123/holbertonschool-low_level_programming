@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
 
-/**
- * print_dog - prints a variable of type struct dog
- * @d: pointer to struct dog to print
- */
 void print_dog(struct dog *d)
 {
     if (d == NULL)
@@ -15,7 +11,6 @@ void print_dog(struct dog *d)
     else
         printf("Name: %s\n", (*d).name);
 
-    /* Age always printed */
     printf("Age: %f\n", (*d).age);
 
     if ((*d).owner == NULL)
