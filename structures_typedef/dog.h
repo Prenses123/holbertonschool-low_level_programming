@@ -1,21 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef DOG_H
+#define DOG_H
+
 /**
- * struct dog = struct 
+ * struct dog - dog structure
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  */
 struct dog
 {
-	char* name;
-	float age;
-	char* owner;
+    char *name;
+    float age;
+    char *owner;
 };
-int main(void)
-{
-	struct dog x;
-	x.name = "Poppy";
-	x.age = 3.5;
-	x.owner = "Bob";
-	printf("%s\n", x.name);
-	printf("%f\n", x.age);
-	printf("%s\n", x.name);
-}
+
+#endif
