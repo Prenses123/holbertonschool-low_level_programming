@@ -3,11 +3,15 @@
 #include "dog.h"
 
 /**
- * void free_dog(dog_t *d) = function
+ * free_dog = function
+ * @d = pointer
  */
 void free_dog(dog_t *d)
 {
-	free((*d).name);
-	free((*d).owner);
-	free(d);
+	if (d)
+	{
+		free((*d).name);
+		free((*d).owner);
+		free(d);
+	}
 }
