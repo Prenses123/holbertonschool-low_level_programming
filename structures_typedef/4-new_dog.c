@@ -21,12 +21,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	(*c).name = malloc(strlen(name) + 1);
 	if ((*c).name == NULL)
 		return (NULL);
-	for (i = 0; name != '\0'; i++)
+	for (i = 0; name[i] != '\0'; i++)
 		(*c).name[i] = name[i]; 
 	(*c).owner = malloc(strlen(owner) + 1);
 	if ((*c).owner == NULL)
 		return (NULL);
-	for (i = 0; owner != '\0'; i++)
+	for (i = 0; owner[i] != '\0'; i++)
 		(*c).owner[i] = owner[i]; 
 	(*c).age = age;
 	return (c);
