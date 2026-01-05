@@ -9,7 +9,7 @@ struct dog
 	float age;
 	char* owner;
 };
-int main()
+int main(void)
 {
 	struct dog x;
 	x.name = "Poppy";
@@ -18,5 +18,4 @@ int main()
 	printf("%s\n", x.name);
 	printf("%f\n", x.age);
 	printf("%s\n", x.name);
-	return (0);
 }
