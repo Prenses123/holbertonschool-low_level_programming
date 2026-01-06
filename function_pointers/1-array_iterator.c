@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include "function_pointers.h"
 void array_iterator(int *array, unsigned int size, void (*action)(int));
 void array_iterator(int *array, unsigned int size, void (*action)(int))
 {
