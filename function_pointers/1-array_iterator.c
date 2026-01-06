@@ -2,7 +2,7 @@
 #include <string.h>
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	typedef int size_t;
+	typedef unsigned int size_t;
 	if (array == NULL || action == NULL)
 		return;
 	size_t i;
