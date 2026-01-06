@@ -1,0 +1,1 @@
+ugurlar umid edirem basararsan
