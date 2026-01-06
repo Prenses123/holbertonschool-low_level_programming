@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
-/*
- * print_name = function that prints name
+/**
+ * print_name - prints a name using a callback function
  * @name: pointer to the name to print
  * @f: pointer to a function that takes a char* and returns void
  */
