@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <string.h>
-void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, unsigned int size, void (*action)(int));
+void array_iterator(int *array, unsigned int size, void (*action)(int))
 {
-	typedef unsigned int size_t;
 	if (array == NULL || action == NULL)
 		return;
-	size_t i;
+	unsigned int i;
 	for (i = 0; i < size; i++)
 		action(array[i]);
-}		
+}
