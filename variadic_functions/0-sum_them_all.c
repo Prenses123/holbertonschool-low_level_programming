@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 /*
  * sum_them_all = function that find sum
- * n = number of parameters
+ * @n = number of parameters
  */
 int sum_them_all(const unsigned int n, ...)
 {
