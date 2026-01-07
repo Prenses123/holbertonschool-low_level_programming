@@ -2,14 +2,15 @@
 #include <string.h>
 #include "function_pointers.h"
 int int_index(int *array, int size, int (*cmp)(int))
-{       
+{
+	int i;
+	int k = 0
     if (array == NULL || cmp == NULL)
-                return (NULL);
+                return;
 	if (size <= 0)
                 return (-1);
 
-	int i;
-	int k = 0;
+
 
 	for (i = 0; i < size; i++)
 	{
