@@ -1,6 +1,7 @@
 #ifndef CALC_H
 #define CALC_H
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * struct op - operator və ona uyğun funksiya
  * @op: operator simvolu
