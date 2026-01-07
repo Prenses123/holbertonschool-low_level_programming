@@ -2,7 +2,11 @@
 #include <string.h>
 #include <stddef.h>
 
-/* operatora uyğun funksiyanı qaytarır */
+/**
+ * get_op_func - operatora uyğun funksiyanı qaytarır
+ * @s: operator simvolu
+ * Return: pointer operator funksiyasına
+ */
 int (*get_op_func(char *s))(int, int)
 {
     op_t ops[] = {
@@ -24,3 +28,4 @@ int (*get_op_func(char *s))(int, int)
 
     return (NULL);
 }
+]
