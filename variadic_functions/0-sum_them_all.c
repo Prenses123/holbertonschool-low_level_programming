@@ -4,6 +4,7 @@
 /*
  * sum_them_all = function that find sum
  * @n = number of parameters
+ * Return:sum variables
  */
 int sum_them_all(const unsigned int n, ...)
 {
