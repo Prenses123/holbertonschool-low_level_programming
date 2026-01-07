@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
+/**
+ * main - sadə kalkulyator
+ * @argc: arqument sayı
+ * @argv: arqumentlərin massividir
+ * Return: 0 (uğurla)
+ */
 int main(int argc, char *argv[])
 {
     int a, b, result;
