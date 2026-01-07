@@ -1,4 +1,4 @@
-#include "3-calc.h"
+#include "calc_h"
 int (*get_op_func(char *s))(int, int);
 {
 	op_t ops[] = {
