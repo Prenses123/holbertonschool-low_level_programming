@@ -4,11 +4,12 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {       
         if (array == NULL || cmp == NULL)
-                return NULL;
+                return (NULL);
 	if (size <= 0)
                 return (-1);
 
-	int i, k = 0;
+	int i;
+	int k = 0;
 
 	for (i = 0; i < size; i++)
 	{
