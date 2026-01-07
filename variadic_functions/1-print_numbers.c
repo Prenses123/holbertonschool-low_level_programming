@@ -5,7 +5,8 @@
 /**
  * print_numbers - function that prints numbers
  * @n: number of arguments
- * Return:noting
+ * @separator: String to be printed between numbers
+ * Return:nothing
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -13,7 +14,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_list args;
 
-	va_start(args,n);
+	va_start(args, n);
 	if (n <= 0)
 	{
 		printf("\n");
@@ -21,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	for (i = 0; i < n; i++)
 	{
-		int number = va_arg(args,int);
+		int number = va_arg(args, int);
 
 		printf("%d", number);
 		if (i != (n - 1) && separator != NULL)
