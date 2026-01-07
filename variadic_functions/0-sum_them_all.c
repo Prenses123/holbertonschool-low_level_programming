@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdarg.h>
+#include <variadic_functions.h>
 /*
  * sum_them_all(const unsigned int n, ...) = function that find sum
  * n = number of parameters
