@@ -24,8 +24,8 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 			{
-				char c = va_arg(args, char);
-				printf("%c", c);
+				int c = va_arg(args, int);
+                printf("%c\n", c);
 			}
 			case 'i':
 			{
@@ -34,7 +34,7 @@ void print_all(const char * const format, ...)
 			}
 			case 'f':
 			{
-				float f = va_arg(args, float);
+				double f = va_arg(args, double);
 				printf("%f", f);
 			}
 			case 's':
