@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 			}
 			case 'i':
 			{
-				int i = va_args(args, int);
+				int i = va_arg(args, int);
 				printf("%d", i);
 			}
 			case 'f':
