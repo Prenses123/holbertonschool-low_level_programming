@@ -26,30 +26,32 @@ void print_all(const char * const format, ...)
 			case 'c':
 			{
 				int c = va_arg(args, int);
-                printf("%c,", c);
+                printf("%c", c);
 				break;
 			}
 			case 'i':
 			{
 				int i = va_arg(args, int);
-				printf("%d,", i);
+				printf("%d", i);
 				break;
 			}
 			case 'f':
 			{
 				double f = va_arg(args, double);
-				printf("%f,", f);
+				printf("%f", f);
 				break;
 			}
 			case 's':
 			{
 				char *s = va_arg(args, char *);
-				printf("%s,", s ? s : "(nil)");
+				printf("%s", s ? s : "(nil)");
 				break;
 			}
 			default:
 				break;
 		}
+		format[i + 1] && printf(", ");
+
 		i++;
 	}
 	printf("\n");
