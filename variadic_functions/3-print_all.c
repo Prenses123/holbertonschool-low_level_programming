@@ -58,6 +58,7 @@ void print_all(const char * const format, ...)
 		}
 		if (format[i + 1] && k == 1)
 			printf(", ");
+		k = 0;
 		i++;
 	}
 	printf("\n");
