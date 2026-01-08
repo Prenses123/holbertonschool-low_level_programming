@@ -1,7 +1,7 @@
 #include <stdarg.h>
-#include <stdlib.h>
 #include <stdio.h>
 #include "variadic_functions.h"
+
 /**
  * print_all - function that prints all
  * @format: format of variables
@@ -9,61 +9,34 @@
  */
 void print_all(const char * const format, ...)
 {
+	va_list ap;
 	int i = 0;
+	char *sep = "", *s;
 
-	va_list args;
-
-	va_start(args, format);
-	if (format == NULL)
+	va_start(ap, format);
+	if (!format)
 	{
 		printf("\n");
+		va_end(ap);
 		return;
 	}
-
 	while (format[i])
 	{
-		int k = 0;
-
 		switch (format[i])
 		{
-			case 'c':
-			{
-				int c = va_arg(args, int);
-				printf("%c", c);
-				k = 1;
-				break;
-			}
-			case 'i':
-			{
-				int i = va_arg(args, int);
-
-				printf("%d", i);
-				k = 1;
-				break;
-			}
-			case 'f':
-			{
-				double f = va_arg(args, double);
-
-				printf("%f", f);
-				k = 1;
-				break;
-			}
-			case 's':
-			{
-				char *s = va_arg(args, char *);
-
-				printf("%s", s ? s : "(nil)");
-				k = 1;
-				break;
-			}
-			default:
-				break;
+		case 'c': printf("%s%c", sep, va_arg(ap, int)); sep = ", "; break;
+		case 'i': printf("%s%d", sep, va_arg(ap, int)); sep = ", "; break;
+		case 'f': printf("%s%f", sep, va_arg(ap, double)); sep = ", "; break;
+		case 's':
+			s = va_arg(ap, char *);
+			if (!s) s = "(nil)";
+			printf("%s%s", sep, s);
+			sep = ", ";
+			break;
+		default: break;
 		}
-		if (format[i + 1] && k == 1)
-			printf(", ");
 		i++;
 	}
 	printf("\n");
-	va_end(args);
+	va_end(ap);
 }
