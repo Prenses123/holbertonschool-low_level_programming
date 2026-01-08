@@ -49,6 +49,7 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
+		format ++;
 	}
 	printf("\n");
 	va_end(args);
