@@ -21,20 +21,21 @@ void print_all(const char * const format, ...)
 		return;
 	}
 
-	while(format[i])
+	while (format[i])
 	{
-		switch(format[i])
+		switch( format[i])
 		{
 			case 'c':
 			{
 				int c = va_arg(args, int);
-                printf("%c", c);
+				printf("%c", c);
 				k = 1;
 				break;
 			}
 			case 'i':
 			{
 				int i = va_arg(args, int);
+
 				printf("%d", i);
 				k = 1;
 				break;
@@ -42,6 +43,7 @@ void print_all(const char * const format, ...)
 			case 'f':
 			{
 				double f = va_arg(args, double);
+
 				printf("%f", f);
 				k = 1;
 				break;
@@ -49,6 +51,7 @@ void print_all(const char * const format, ...)
 			case 's':
 			{
 				char *s = va_arg(args, char *);
+
 				printf("%s", s ? s : "(nil)");
 				k = 1;
 				break;
