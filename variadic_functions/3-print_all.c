@@ -46,6 +46,8 @@ void print_all(const char * const format, ...)
 				printf("%s\n", s ? s : "(nil)");
 				break;
 			}
+			default:
+				break;
 		}
 	}
 	printf("\n");
