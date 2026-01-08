@@ -42,6 +42,7 @@ void print_all(const char * const format, ...)
 				char *s = va_arg(args, char *);
 				printf("%s\n", s ? s : "(nil)");
 			}
+		}
 	}
 	printf("\n");
 	va_end(args);
