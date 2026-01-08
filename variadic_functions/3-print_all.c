@@ -26,21 +26,25 @@ void print_all(const char * const format, ...)
 			{
 				int c = va_arg(args, int);
                 printf("%c\n", c);
+				break;
 			}
 			case 'i':
 			{
 				int i = va_arg(args, int);
 				printf("%d", i);
+				break;
 			}
 			case 'f':
 			{
 				double f = va_arg(args, double);
 				printf("%f", f);
+				break;
 			}
 			case 's':
 			{
 				char *s = va_arg(args, char *);
 				printf("%s\n", s ? s : "(nil)");
+				break;
 			}
 		}
 	}
