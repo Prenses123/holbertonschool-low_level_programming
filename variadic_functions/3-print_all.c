@@ -10,6 +10,8 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
+	int k = 0;
+
 	va_list args;
 
 	va_start(args, format);
@@ -27,30 +29,34 @@ void print_all(const char * const format, ...)
 			{
 				int c = va_arg(args, int);
                 printf("%c", c);
+				k = 1;
 				break;
 			}
 			case 'i':
 			{
 				int i = va_arg(args, int);
 				printf("%d", i);
+				k = 1;
 				break;
 			}
 			case 'f':
 			{
 				double f = va_arg(args, double);
 				printf("%f", f);
+				k = 1;
 				break;
 			}
 			case 's':
 			{
 				char *s = va_arg(args, char *);
 				printf("%s", s ? s : "(nil)");
+				k = 1;
 				break;
 			}
 			default:
 				break;
 		}
-		if (format[i + 1])
+		if (format[i + 1] && k == 1)
 			printf(", ");
 		i++;
 	}
