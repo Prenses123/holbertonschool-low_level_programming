@@ -1,38 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
+#include <stdio.h>
+
 /**
- * print_list - function that prints nodes
- * @h: numbeer of nodes
- * Return:prints datas
+ * print_list - prints all elements of a list_t list
+ * @h: pointer to the first node
+ * Return: number of nodes
  */
 size_t print_list(const list_t *h)
 {
-	size_t count = 0;
-	const list_t *ptr = h;
+    size_t count = 0;
+    const list_t *ptr = h;
 
-	if (h == NULL)
-	{
-		printf("[0] (nil)\n");
-		return (0);
-	}
-	while(ptr != NULL)
-	{
-		if (ptr->str != NULL)
-			printf("%s\n", ptr->str);
-		else
-			printf("[0] (nil)\n");
-		ptr = ptr->next;
-		count++;
-	}
-	return (count);
-}
-int main(void)
-{
-	list_t tail = {"School", NULL};
-    list_t head = {"Best", &tail};
+    while (ptr != NULL)
+    {
+        if (ptr->str != NULL)
+            printf("[%u] %s\n", ptr->len, ptr->str);
+        else
+            printf("[0] (nil)\n");
 
-    print_list(&head);
+        count++;
+        ptr = ptr->next;
+    }
 
-    return (0);
+    return count;
 }
