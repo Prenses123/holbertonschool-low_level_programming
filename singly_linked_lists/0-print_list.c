@@ -29,6 +29,10 @@ size_t print_list(const list_t *h)
 }
 int main(void)
 {
-	print_list(h);
-	return (0);
+	list_t tail = {"School", NULL};
+    list_t head = {"Best", &tail};
+
+    print_list(&head);
+
+    return (0);
 }
