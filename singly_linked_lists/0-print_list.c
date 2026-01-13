@@ -27,7 +27,8 @@ size_t print_list(const list_t *h)
 	}
 	return (count);
 }
-int main()
+int main(void)
 {
 	print_list(h);
+	return (0);
 }
