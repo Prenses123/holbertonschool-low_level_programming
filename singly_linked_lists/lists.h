@@ -7,10 +7,7 @@
  * @str: string - malloc'ed string
  * @len: length of the string
  * @next: points to the next node
- *
- * Description: singly linked list node structure for print_list and other tasks
  */
-
 typedef struct list_s
 {
 	char *str;
