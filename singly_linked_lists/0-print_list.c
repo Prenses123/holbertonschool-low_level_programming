@@ -9,13 +9,13 @@
 size_t print_list(const list_t *h)
 {
 	int count = 0;
+	list_t *ptr = NULL;
 
 	if (h == NULL)
 	{
 		printf("[0] (nil)");
 		return (0);
 	}
-	list_t *ptr = NULL;
 	ptr = h;
 	while(ptr != NULL)
 	{
