@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 #include <string.h> 
+#include <stdlib.h>
 /**
  * add_node - function
  * @head: jddjj
@@ -22,5 +23,5 @@ list_t *add_node(list_t **head, const char *str)
 		head = ptr;
 		while (ptr != NULL)
 			ptr = ptr->next;
-		retur (head);
+		return (head);
 	}
