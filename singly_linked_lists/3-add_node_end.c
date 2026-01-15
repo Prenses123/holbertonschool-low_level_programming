@@ -13,7 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *ptr, *temp;
 	int n = 0;
 	temp = malloc(sizeof(list_t));
-	char *s = str;
+	const char *s = str;
 
 	if (head == NULL || str == NULL)
 		return (NULL);
@@ -36,7 +36,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		s++;
 	}
 	temp->str = str;
-	temp->link = link;
+	temp->next = next;
 	while (ptr->link != NULL)
 		ptr = ptr->next;
 	ptr->next = temp;
