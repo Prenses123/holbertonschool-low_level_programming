@@ -11,11 +11,11 @@
  * @len: length of the string
  * @next: points to the next node
  */
-typedef struct list_s
+typedef struct dlistint_s
 {
-	struct list_s *prev;
-	char *str;
-	struct list_s *next;
+    int n;
+    struct dlistint_s *prev;
+    struct dlistint_s *next;
 } dlistint_t;
 size_t print_dlistint(const dlistint_t *h);
 
