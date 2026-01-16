@@ -13,7 +13,7 @@ typedef struct list_s
 	struct list_s prev;
 	char *str;
 	struct list_s *next;
-} list_t;
+} dlistint_t;
 size_t print_dlistint(const dlistint_t *h);
 
 #endif /* LISTS_H */
