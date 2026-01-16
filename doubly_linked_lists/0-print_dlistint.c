@@ -1,0 +1,20 @@
+#include <stdlib.h>
+#include <string.h>
+/**
+ * print_dlistint - function
+ * @h:head
+ * Return:returns number of nodes
+ */
+size_t print_dlistint(const dlistint_t *h)
+{
+	size_t count = 0;
+	const list_t *ptr = h;
+
+	while(ptr != NULL)
+	{
+		printf("%s\n", ptr->str);
+		ptr = ptr->next;
+		count++;
+	}
+	return (count);
+}
