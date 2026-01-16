@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
  * add_dnodeint - funbction
- * @head - head of list
+ * @head:head of list
  * @n:data
  * Return:number of nodes
  */
