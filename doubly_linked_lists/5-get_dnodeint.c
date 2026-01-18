@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-#include "lists.hi"
+#include "lists.h"
 /**
  * get_dnodeint_at_index - function
  * @head: head
