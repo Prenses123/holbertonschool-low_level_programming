@@ -27,15 +27,17 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (temp);
 	}
 	ptr = *h;
-	for ( i = 0; ptr != NULL && i < idx - 1; i++)
+	for (i = 0; ptr != NULL && i < idx - 1; i++)
 	{
         	ptr = ptr->next;
-			i++;
 	}
 	if (ptr == NULL)
 		return (NULL);
 	temp->prev = ptr;
 	temp->next = ptr->next;
 	temp->n = n;
+	if (ptr->next != NULL)
+    	ptr->next->prev = temp;
+	ptr->next = temp;
 	return (temp);
 }
