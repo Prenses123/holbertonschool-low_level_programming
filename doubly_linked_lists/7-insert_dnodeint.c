@@ -10,7 +10,7 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *ptr, temp;
+	dlistint_t *ptr, *temp;
 	unsigned int i = 0;
 	
 	if (head == NULL || idx < 0)
@@ -24,7 +24,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (*head == NULL && idx == 0)
 	{
 		*head = temp;
-		return (temp)
+		return (temp);
 	}
 	ptr = *head
 	for ( i = 0; ptr != NULL && i < idx - 1; i++)
