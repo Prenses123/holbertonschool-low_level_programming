@@ -9,7 +9,7 @@
 int sum_dlistint(dlistint_t *head)
 {
 	dlistint_t *ptr;
-	int i = 0, sum = 0;
+	int sum = 0;
 
 	if (head == NULL)
 		return (0);
@@ -19,5 +19,5 @@ int sum_dlistint(dlistint_t *head)
 		ptr = ptr->next;
 		sum += ptr->n;
 	}
-	return (sum)
+	return (sum);
 }
