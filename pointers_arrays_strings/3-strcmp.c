@@ -8,16 +8,17 @@
  */
 int _strcmp(char *s1, char *s2)
 {
+	int len1, len2;
 	int i = 0, j = 0;
 
 	if (s1 == NULL || s2 == NULL)
-		return (NULL);
+		return (-1);
 	while (s1[i] != '\0')
 		i++;
 	while (s2[j] != '\0')
                 j++;
-	int len1 = i;
-	int len2 = j;
+	len1 = i;
+	len2 = j;
 	if (len1 != len2)
 	{
 		if (len1 > len2)
