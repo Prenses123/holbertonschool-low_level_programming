@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * reverse_array - function
- * @a -array of integers
- * @n - number
+ * @a:array of integers
+ * @n: number
  * Return: array
  */
 void reverse_array(int *a, int n)
