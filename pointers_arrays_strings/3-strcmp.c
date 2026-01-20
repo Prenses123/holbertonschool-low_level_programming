@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * int _strcmp - function
+ * _strcmp - function
  * @s1:first string
  * @s2:second string
  * Return:result
