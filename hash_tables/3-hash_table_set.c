@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-
+#include <string.h>
 /**
  * hash_table_set - Hash tablosuna eleman ekler veya gunceller.
  * @ht: Hash tablosu.
