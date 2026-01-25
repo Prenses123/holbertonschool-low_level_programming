@@ -14,7 +14,7 @@ int create_file(const char *filename, char *text_content)
 		while (text_content[l])
 			l++;
 		n_written = write(fd, text_content, l);
-		if (n_written == -1 || n_written != len)
+		if (n_written == -1 || n_written != l)
 		{
 			close(fd);
 			return(-1);
